@@ -36,7 +36,7 @@ contract ManagerContract is BaseContract {
         Advertisers[_advertiser] = advertiserContractAddress;
     }
 
-    function swaptoken(uint256 amount) public {
+    function swaptoken(uint256 amount) onlyAdmin public {
 
         uint256 balanceContract = token.balanceOf(address(this));
         require(balanceContract > amount, "not enough balance");
