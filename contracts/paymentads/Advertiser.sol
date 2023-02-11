@@ -1,7 +1,7 @@
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.4;
 
 import "./BaseContract.sol";
-
 
 contract Advertiser {
     using SafeERC20 for IERC20;
